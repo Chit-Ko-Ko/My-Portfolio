@@ -1,0 +1,42 @@
+html, body {
+    background-color: #343a40;
+}
+
+.container {
+    margin-top: 100px;
+    max-width: 500px;
+}
+
+.focus {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.resultContainer {
+    background-color: #fff;
+}
+
+.productItemContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+}
+
+.productName {
+    font-size: 14px;
+    width: 80%;
+}
+
+.productImage {
+    height: 80%;
+}
+
+.selectedProduct {
+    text-align: center;
+    color: white;
+    margin: 20px;
+}

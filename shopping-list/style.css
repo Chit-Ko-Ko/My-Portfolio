@@ -1,0 +1,43 @@
+body {
+    background-color: #343a40;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
+    max-width: 500px;
+}
+
+.shoppingListContainer {
+    margin-top: 20px;
+}
+
+.productName {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+.productContainer {
+    margin-bottom: 25px;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.fa-trash {
+    color: #fff;
+    float: right;
+    cursor: pointer;
+}
+
