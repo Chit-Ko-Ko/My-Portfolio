@@ -5,34 +5,22 @@ body {
 
 .container {
     max-width: 1000px;
-    margin-top: 100px;
-}
-
-.hamburger {
-    width: 40px;
-    height: 4px;
-    background-color: #fff;
-    margin: 5px 0px;
-    border-radius: 5px;
 }
 
 .hamburgerMenuContainer {
+    margin-top: 50px;
     position: fixed;
     right: 50px;
     cursor: pointer;
     z-index: 1;
 }
 
-.dispearLine {
-    opacity: 0;
-}
-
-.rotatePlus45Deg {
-    transform: rotate(45deg) translate(5px, 8px);
-}
-
-.rotateMinus45Deg {
-    transform: rotate(-45deg) translate(5px, -8px);
+.line {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    margin: 3px 0px;
+    border-radius: 3px;
 }
 
 .line1,
@@ -43,36 +31,46 @@ li {
     transition: all 0.5s ease;
 }
 
+.disapearLine {
+    opacity: 0;
+}
+
+.rotatePlus45Deg {
+    transform: rotate(45deg) translate(4px, 5px);
+}
+
+.rotateMinus45Deg {
+    transform: rotate(-45deg) translate(4px, -5px);
+}
+
 .overlayMenu {
+    background-color: darkcyan;
+    position: absolute;
+    left: 0px;
     width: 100vw;
     height: 100vh;
-    background-color: darkcyan;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.showOverlayMenu {
-    opacity: 1;
+    opacity: 0;
 }
 
 li {
     list-style: none;
-    user-select: none;
-    cursor: pointer;
     font-size: 35px;
     padding: 10px;
+    margin: 10px;
+    user-select: none;
+    pointer-events: none;
+    cursor: pointer;
 }
 
-li:hover {
-    opacity: 0.5;
-}
-
-.moveLiTagUp {
+.moveLiTagUpAndClickable {
     transform: translateY(-10px);
+    pointer-events: auto;
+}
+
+.showOverlayMenu {
+    opacity: 1;
 }

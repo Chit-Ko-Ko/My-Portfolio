@@ -1,31 +1,28 @@
 const hamburgerMenuContainerTag = document.querySelector(".hamburgerMenuContainer");
-
-const hamburgerLine1Tag = document.querySelector(".line1");
-const hamburgerLine2Tag = document.querySelector(".line2");
-const hamburgerLine3Tag = document.querySelector(".line3");
-
+const line1FromMenuTag = document.querySelector(".line1");
+const line2FromMenuTag = document.querySelector(".line2");
+const line3FromMenuTag = document.querySelector(".line3");
 const overlayMenuTag = document.querySelector(".overlayMenu");
 const liTags = document.getElementsByTagName("li");
-const bodyTag = document.getElementsByTagName("body")[0];
 
 hamburgerMenuContainerTag.addEventListener("click", () => {
     if (hamburgerMenuContainerTag.classList.contains("isOpened")) {
-        hamburgerLine2Tag.classList.remove("dispearLine");
-        hamburgerLine1Tag.classList.remove("rotatePlus45Deg");
-        hamburgerLine3Tag.classList.remove("rotateMinus45Deg");
-        hamburgerMenuContainerTag.classList.remove("isOpened");
+        line2FromMenuTag.classList.remove("disapearLine");
+        line1FromMenuTag.classList.remove("rotatePlus45Deg");
+        line3FromMenuTag.classList.remove("rotateMinus45Deg");
         overlayMenuTag.classList.remove("showOverlayMenu");
         for (let i = 0; i < liTags.length; i++) {
-            liTags[i].classList.remove("moveLiTagUp");
+            liTags[i].classList.remove("moveLiTagUpAndClickable");
         }
+        hamburgerMenuContainerTag.classList.remove("isOpened");
     } else {
+        line2FromMenuTag.classList.add("disapearLine");
+        line1FromMenuTag.classList.add("rotatePlus45Deg");
+        line3FromMenuTag.classList.add("rotateMinus45Deg");
         overlayMenuTag.classList.add("showOverlayMenu");
-        hamburgerLine2Tag.classList.add("dispearLine");
-        hamburgerLine1Tag.classList.add("rotatePlus45Deg");
-        hamburgerLine3Tag.classList.add("rotateMinus45Deg");
-        hamburgerMenuContainerTag.classList.add("isOpened");
         for (let i = 0; i < liTags.length; i++) {
-            liTags[i].classList.add("moveLiTagUp");
+            liTags[i].classList.add("moveLiTagUpAndClickable");
         }
+        hamburgerMenuContainerTag.classList.add("isOpened");
     }
 });
