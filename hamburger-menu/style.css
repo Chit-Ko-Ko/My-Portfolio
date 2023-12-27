@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    color: lightgreen;
+}
+
+.container {
+    max-width: 1000px;
+    margin-top: 100px;
+}
+
+.hamburger {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.hamburgerMenuContainer {
+    position: fixed;
+    right: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.dispearLine {
+    opacity: 0;
+}
+
+.rotatePlus45Deg {
+    transform: rotate(45deg) translate(5px, 8px);
+}
+
+.rotateMinus45Deg {
+    transform: rotate(-45deg) translate(5px, -8px);
+}
+
+.line1,
+.line2,
+.line3,
+.overlayMenu,
+li {
+    transition: all 0.5s ease;
+}
+
+.overlayMenu {
+    width: 100vw;
+    height: 100vh;
+    background-color: darkcyan;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showOverlayMenu {
+    opacity: 1;
+}
+
+li {
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 35px;
+    padding: 10px;
+}
+
+li:hover {
+    opacity: 0.5;
+}
+
+.moveLiTagUp {
+    transform: translateY(-10px);
+}
