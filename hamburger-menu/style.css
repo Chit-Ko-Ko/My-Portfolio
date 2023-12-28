@@ -66,6 +66,10 @@ li {
     cursor: pointer;
 }
 
+li:hover {
+    opacity: 0.5;
+}
+
 .moveLiTagUpAndClickable {
     transform: translateY(-10px);
     pointer-events: auto;
