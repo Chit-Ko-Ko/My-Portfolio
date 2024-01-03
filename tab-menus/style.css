@@ -1,0 +1,35 @@
+body {
+    background-color: #2D3F50;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.tabMenusContainer {
+    margin: auto;
+    width: 550px;
+    margin-top: 50px;
+}
+
+.tabMenus {
+    background-color: #DA4353;
+    display: inline-block;
+    position: relative;
+}
+
+li {
+    list-style: none;
+    padding: 10px 20px;
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.slider {
+    background-color: #46CFB0;
+    height: 5px;
+    transition: all .4s ease-in-out;
+    transform: translateY(-5px);
+}
